@@ -1,0 +1,406 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue-indigo.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js" charset="utf-8"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" charset="utf-8"></script>
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.7.2.js"></script>
+  <script src="app.js"></script>
+</head>
+<body>
+
+  <!--loading page-->
+  <div class="" id="loading">
+    <div class="loading text-center">
+      <img class="loading-image" src="img/giphy.gif" alt="">
+    </div>
+  </div>
+
+  <!--floating button-->
+  <div class="query-box" id="send-query" timeout="5000">
+    <div class="" style="padding: 15px 0px 0px 40px">
+      <input class="" type="text" style="opacity: 1;z-index: 1;border: none" placeholder="Enter Your Email Id" id="input">
+        <button type="button" name="button" style="float: right;margin: -2px 20px 10px 0px;background-color: white;border:none;" id="submit"><i class="material-icons" style="float: right;color: grey" id="submit">send</i></button>
+    </div>
+  </div>
+  <div class="floating-button">
+    <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" style="background-color:#00bfbc;" id="float-btn-1">
+      <i class="material-icons">border_color</i>
+    </button>
+  </div>
+  <div class="floating-button" id="icon">
+    <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" style="background-color:#00bfbc;" id="float-btn-2">
+      <i class="material-icons">cancel</i>
+    </button>
+  </div>
+
+  <!--first page-->
+    <!--first page for large and med screen-->
+    <div class="">
+      <div class="row  hidden-xs hidden-sm">
+
+        <div class="col-sm-6 animated fadeInUp">
+            <img src="img/pixel2.png" alt="" id="img1"/>
+            <video src="img/medy_intro.mp4" autoplay loop id="img1-gif"></video>
+        </div>
+        <div class="col-sm-6 animated fadeInUp text-center content" style="padding-right:5%;margin-left: -5%">
+          <div class="" style="padding-top:32%">
+            <img style="height:auto;width:40%" src="img/list.svg" alt="">
+          </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima corporis voluptates repellat ullam labore qui voluptatum </p>
+            <div class="text-center" style="padding-top: 3%">
+              <!--<div class="msg_btn">
+                <h3 style="padding: 4% 0% 2% 18%;font-size: 2vw">Messenger</h3>
+              </div>-->
+              <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" style="height: 40px;width:160px;font-size:1.2em">
+               Messenger
+             </button>
+            </div>
+        </div>
+
+      </div>
+    </div>
+    <!--first page for small screen-->
+    <div class="">
+      <div class="row  hidden-lg hidden-md hidden-xs">
+
+        <div class="col-sm-6 animated fadeInUp" style="padding-top: 2%">
+          <img src="img/pixel2.png" alt="" id="img1"/>
+          <img src="img/medy_1_small.gif" alt="" id="img1-gif"/>
+          <!--<video src="img/medy_intro.mp4" autoplay loop id="img1-gif"></video>-->
+        </div>
+        <div class="col-sm-6 animated fadeInUp text-center content" style="%">
+          <div class="" style="padding-top: 35%">
+            <img style="height:auto;width:40%" src="img/list.svg" alt="">
+          </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima corporis voluptates </p>
+            <div class="text-center" style="padding-top: 3%">
+              <!--<div class="msg_btn">
+                <h3 style="padding: 4% 0% 2% 18%;font-size: 2vw">Messenger</h3>
+              </div>-->
+              <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" style="height: 40px;width:160px;font-size:1.2em">
+               Messenger
+             </button>
+            </div>
+        </div>
+
+      </div>
+    </div>
+    <!--first page for extra small screen-->
+    <div class="" style="background-size: cover">
+      <div class="hidden-lg hidden-md hidden-sm">
+
+        <div class="animated fadeInUp text-center content" style="%">
+          <div class="" style="padding-top: 35%">
+            <img style="height:auto;width:70%" src="img/list.svg" alt="">
+          </div>
+            <p style="padding-top: 10%">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima corporis voluptates </p>
+            <p style="padding-top: 5%">Lorem ipsum dolor sit amet, consectetur adipisicing </p>
+            <div class="text-center" style="padding-top: 5%">
+              <!--<div class="msg_btn">
+                <h3 style="padding: 4% 0% 2% 18%;font-size: 2vw">Messenger</h3>
+              </div>-->
+              <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" style="height: 50px;width:180px;font-size:1.2em">
+               Messenger
+             </button>
+            </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!--second page-->
+    <!--for large and md-->
+    <div class="">
+      <div class="row hidden-xs hidden-sm" style="padding-top: 10%">
+          <div class="col-sm-4 revealOnScroll" style="margin-left:10px;padding-left: 5%" data-animation="slideInLeft">
+            <div class="" style="padding-top:22%">
+              <p class="heading">SEARCH</p>
+              <div id="seconds" class="seconds">
+                <div id="bar" class="bar"></div>
+              </div>
+              <p class="detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et ut labore et ut labore et</p>
+            </div>
+            <div class="" style="padding-top:15%">
+              <p class="heading">HEALTHTIPS</p>
+              <div id="seconds" class="seconds">
+                <div id="bar-2" class="bar"></div>
+              </div>
+              <p class="detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et ut labore et ut labore et</p>
+            </div>
+          </div>
+          <div class="revealOnScroll col-sm-4 text-center" data-animation="slideInUp">
+            <div class="">
+              <img src="img/pixel2.png" alt="" id="img2">
+              <video src="img/medy_features.mp4" autoplay loop id="img2-gif"></video>
+
+            </div>
+          </div>
+          <div class="revealOnScroll col-sm-4" style="margin-left:-10px;;padding-right: 5%" data-animation="slideInRight">
+            <div class="" style="padding-top:22%">
+              <p class="heading">REVIEWS</p>
+              <div id="seconds" class="seconds">
+                <div id="bar" class="bar"></div>
+              </div>
+              <p class="detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et tempor incididunt ut labore et</p>
+            </div>
+            <div class="" style="padding-top:15%">
+              <p class="heading">DISCOUNT</p>
+              <div id="seconds" class="seconds">
+                <div id="bar" class="bar"></div>
+              </div>
+              <p class="detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et incididunt ut labore et </p>
+            </div>
+          </div>
+      </div>
+
+    </div>
+    <!--for small screen-->
+    <div class="">
+      <div class="row hidden-xs hidden-md hidden-lg" style="padding-top: 10%">
+          <div class="animated fadeInLeft col-sm-4" style="padding-right:%">
+            <div class="" style="padding-top:10%">
+              <p class="heading">SEARCH</p>
+              <div id="seconds" class="seconds-sm">
+                <div id="bar" class="bar"></div>
+              </div>
+              <p class="detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et ut labore et ut labore et</p>
+            </div>
+            <div class="" style="padding-top:25%">
+              <p class="heading">HEALTHTIPS</p>
+              <div id="seconds" class="seconds-sm">
+                <div id="bar-2" class="bar"></div>
+              </div>
+              <p class="detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et ut labore et ut labore et</p>
+            </div>
+          </div>
+          <div class="animated fadeInUp col-sm-4 text-center" style="margin-top: 10%" data-animation="fadeInUp">
+            <div class="">
+              <img src="img/pixel2.png" alt="" id="img2-sm">
+              <img src="img/medy_2_small.gif" alt="" id="img2-sm-gif">
+
+              <!--<video src="img/medy_2_small.mp4" autoplay loop id="img2-sm-gif"></video>-->
+
+            </div>
+          </div>
+          <div class="animated fadeInRight col-sm-4" data-animation="slideInRight">
+            <div class="" style="padding-top:10%">
+              <p class="heading">REVIEWS</p>
+              <div id="seconds" class="seconds-sm">
+                <div id="bar" class="bar"></div>
+              </div>
+              <p class="detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et ut labore et ut labore et</p>
+            </div>
+            <div class="" style="padding-top:25%">
+              <p class="heading">DISCOUNT</p>
+              <div id="seconds" class="seconds-sm">
+                <div id="bar" class="bar"></div>
+              </div>
+              <p class="detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et ut labore et ut labore et</p>
+            </div>
+          </div>
+      </div>
+
+    </div>
+    <!--for extra small screen-->
+    <div class="">
+      <div class="revealOnScroll hidden-sm hidden-md hidden-lg" style="padding-top: 20%" data-animation="fadeInUp">
+        <div class="text-center" style="margin-top: 0%">
+          <div class="">
+            <img src="img/pixel2.png" alt="" id="img2-xs">
+            <img src="img/medy_2_small.gif" alt="" id="img2-xs-gif">
+            <!--<video autobuffer id="img2-xs-gif" onclick="play()">
+              <source src="img/medy_2.mp4" type="video/mp4" >
+            </video>-->
+
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="revealOnScroll" style="padding: 10% 5% 5% 5%"  data-animation="fadeInUp">
+            <p class="heading-xs">SEARCH</p>
+            <div id="seconds" class="seconds-xs">
+              <div id="bar" class="bar"></div>
+            </div>
+            <p class="detail-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et ut labore et ut labore et</p>
+          </div>
+          <div class="revealOnScroll" style="padding: 5%"  data-animation="fadeInUp">
+            <p class="heading-xs">REVIEWS</p>
+            <div id="seconds" class="seconds-xs">
+              <div id="bar" class="bar"></div>
+            </div>
+            <p class="detail-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et ut labore et ut labore et</p>
+          </div>
+          <div class="revealOnScroll" style="padding: 5%"  data-animation="fadeInUp">
+            <p class="heading-xs">HEALTHTIPS</p>
+            <div id="seconds" class="seconds-xs">
+              <div id="bar" class="bar"></div>
+            </div>
+            <p class="detail-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et ut labore et ut labore et</p>
+          </div>
+          <div class="revealOnScroll" style="padding: 5%"  data-animation="fadeInUp">
+            <p class="heading-xs">DISCOUNTS</p>
+            <div id="seconds" class="seconds-xs">
+              <div id="bar" class="bar"></div>
+            </div>
+            <p class="detail-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et ut labore et ut labore et</p>
+          </div>
+        </div>
+
+    </div>
+  </div>
+
+  <!--fb start for lg md and xs-->
+    <div>
+      <div class="text-center">
+        <p style="color:#9E9E9E;font-weight:bold;padding-top:5%">SUPPORTED BY</p>
+        <img class="revealOnScroll" src="https://static.mailchimp.com/web/fbstart/fbstart_logo.png" alt="" id="img3" data-animation="fadeInUp">
+      </div>
+   </div>
+
+   <!--footer for large and md and sm-->
+    <div class="" style="">
+      <div class="row hidden-xs" style="background-color:#F5F5F5">
+        <div class="col-sm-2" style="padding: 4% 0% 4% 6%">
+          <div class="">
+            <img src="img/list.svg" alt="" style="height: auto; width: 90%">
+          </div>
+          <div>
+            <p style="font-weight:bold;font-size:1.3em;color:grey;padding: 5% 0 0 5%"></p>
+            <p></p>
+          </div>
+        </div>
+      <div class="col-sm-2" style="padding: 5% 0 4% 8%">
+        <div>
+           <p style="font-weight:bold;font-size:0.9em;color:grey">CONTACT</p>
+           <div style="font-weight:bold;font-size:1.3em;color:grey">
+             <p>Email</p>
+             <p>Address</p>
+             <p>Mobile no.</p>
+           </div>
+        </div>
+      </div>
+      <div class="col-sm-2" style="padding: 5% 0% 4% 8%">
+        <div>
+           <p style="font-weight:bold;font-size:0.9em;color:grey">HEYMEDY</p>
+           <div style="font-weight:bold;font-size:1.3em;color:grey">
+             <p>About</p>
+             <p>Careers</p>
+             <p>Help Center</p>
+           </div>
+        </div>
+      </div>
+      <div class="col-sm-2" style="padding: 5% 0% 4% 8%">
+        <div>
+           <p style="font-weight:bold;font-size:0.9em;color:grey">LEGAL</p>
+           <div style="font-weight:bold;font-size:1.3em;color:grey">
+             <p>Terms</p>
+             <p>Privacy Policy</p>
+           </div>
+        </div>
+      </div>
+      <div class="col-sm-2" style="padding: 5% 0% 4% 8%">
+        <div>
+           <p style="font-weight:bold;font-size:0.9em;color:grey">SOCIAL MEDIA</p>
+           <div style="font-weight:bold;font-size:1.3em;color:grey">
+             <p><i class="fa fa-facebook-square social-icons" style="color:#3b5998"></i>Facebook</p>
+             <p><i class="fa fa-instagram social-icons" style="color:#cd486b"></i>Instagram</p>
+             <p><i class="fa fa-twitter social-icons" style="color:#00aced"></i>Twitter</p>
+             <p><i class="fa fa-linkedin-square social-icons" style="color:#0077b5"></i>LinkedIn</p>
+           </div>
+        </div>
+      </div>
+      </div>
+
+    </div>
+
+    <!--new accordian-->
+    <div class="">
+      <div class="hidden-sm hidden-md hidden-lg">
+        <div class="tab blue">
+          <input id="tab-one" type="radio" name="tabs2" onclick="function1()">
+          <label for="tab-one">CONTACT</label>
+          <div class="tab-content">
+            <p>Email</p>
+            <p>Address</p>
+            <p>Mobile no.</p>
+           </div>
+        </div>
+          <div class="tab blue">
+            <input id="tab-two" type="radio" name="tabs2" onclick="function2()">
+            <label for="tab-two">HEYMEDY</label>
+            <div class="tab-content">
+              <p>About</p>
+              <p>Careers</p>
+            </div>
+        </div>
+          <div class="tab blue">
+            <input id="tab-three" type="radio" name="tabs2" onclick="function3()">
+            <label for="tab-three">LEGAL</label>
+            <div class="tab-content">
+              <p>Terms</p>
+              <p>Privacy Policy</p>
+            </div>
+        </div>
+        <div class="tab blue">
+          <input id="tab-four" type="radio" name="tabs2" onclick="function4()">
+          <label for="tab-four">SOCIAL MEDIA</label>
+          <div class="tab-content">
+            <p><i class="fa fa-facebook-square social-icons" style="color:#3b5998"></i>Facebook</p>
+            <p><i class="fa fa-instagram social-icons" style="color:#cd486b"></i>Instagram</p>
+            <p><i class="fa fa-twitter social-icons" style="color:#00aced"></i>Twitter</p>
+          </div>
+      </div>
+      </div>
+
+    </div>
+
+    <!--lower footer for lg md and sm-->
+    <div >
+     <div class="hidden-xs hidden-sm">
+       <div class="footer">
+         <div class="row">
+           <div class="col-sm-6">
+             <p style="padding: 3% 0% 0% 10%">Made with <i class="fa fa-heart" style="color: #F44336;font-size:0.9em"></i> in India</p>
+           </div>
+           <div class="col-sm-6">
+             <a href="www.heymedy.com" style="text-decoration:none;color:#757575"><p style="padding: 3% 0% 0% 35%">Copyrights &copy; 2017 Heymedy Healthtech LLP</p></a>
+           </div>
+         </div>
+         </div>
+       </div>
+    </div>
+    <!--lower footer for sm-->
+    <div class="hidden-lg hidden-md hidden-xs">
+      <div class="footer-sm" style="">
+        <div class="text-center" style="padding-top: 10px">
+            <p style="padding-top: 0px">Made with <i class="fa fa-heart" style="color: #F44336;font-size:0.9em"></i> in India</p>
+            <a href="www.heymedy.com" style="text-decoration:none;color:#757575"><p style="margin-top: -10px">Copyrights &copy; 2017 Heymedy Healthtech LLP</p></a>
+          </div>
+      </div>
+    </div>
+    <!--lower footer for xs-->
+    <div >
+     <div class="hidden-lg hidden-md hidden-sm">
+          <div class="footer-xs">
+            <p style="margin-bottom: -10px;padding-top: 5px">Made with <i class="fa fa-heart" style="color: #F44336;;font-size:0.9em"></i> in India<br>Copyrights &copy; 2017 Heymedy Healthtech LLP </p>
+          </div>
+      </div>
+    </div>
+
+
+
+</body>
+
+</html>
